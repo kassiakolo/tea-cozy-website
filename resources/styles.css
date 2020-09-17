@@ -10,7 +10,6 @@ html {
 }
 
 .main-content {
-  position: static;
   padding-top: 3rem; /* To offset for fixed header. */
 }
 
@@ -48,25 +47,100 @@ nav li {
 }
 
 nav a {
- text-decoration: none;
- color: seashell;
+  text-decoration: none;
+  color: seashell;
 }
 
 /* Banner Section */
 
 #banner-section {
   display: flex;
-  justify-content: center; 
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-image: url(images/img-mission-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1000px;
+  background-position: center;
+  height: 700px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
-  
 
-#banner-section .banner-center{
+#banner-section .banner-center {
   background-color: black;
-  width: 1200px;
-  align-items: center;
+  opacity: 0.9;
+  width: 1350px;
+  height: 150px;
+}
+
+/* Features Section */
+
+#features-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+#features-section .images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 30%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* Locations Section */
+
+#locations-section {
+  background-image: url(images/img-locations-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.locations {
+  height: 500px;
+} 
+
+.particular-locations {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60%;
+}
+
+.locations h2 {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.particular-locations div {
+  width: 25%;
+  height: 100%;
+}
+
+.text-box {
+  width: 100%;
+  background-color: black;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+/* Footer*/
+
+#footer {
+  background-color: black;
+}
+
+.copyright h5 {
+  text-align: left;
+  margin-left: 20px;
 }
